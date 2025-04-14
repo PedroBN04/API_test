@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder - OMDb API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Primeira Tela: Captura de voz ou busca digitada -->
+        <div class="screen" id="screen1">
+            <h1>Audio Feedback</h1>
+            <button id="voiceBtn" class="microphone-btn">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <input type="text" id="movieInput" placeholder="Digite o nome do filme...">
+            <button id="searchBtn">Buscar</button>
+            <button id="upgradePlanBtn">Upgrade Plan</button>
+        </div>
+
+        <!-- Segunda Tela: Exibição dos resultados da busca -->
+        <div class="screen" id="screen2" style="display: none;">
+            <h1>Resultados da Busca</h1>
+            <div class="info-list" id="results"></div>
+        </div>
+
+        <!-- Terceira Tela: Detalhes do filme selecionado -->
+        <div class="screen" id="screen3" style="display: none;">
+            <h1>Detalhes do Filme</h1>
+            <div class="movie-details" id="movieDetails"></div>
+            <div class="bottom-nav">
+                <button onclick="showScreen(2)">Voltar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d3436;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #dfe6e9;
+    text-align: center;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.microphone-btn {
+    background-color: #00b894;
+    color: white;
+    font-size: 40px;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.microphone-btn:hover {
+    background-color: #0984e3;
+}
+
+input, button {
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input {
+    width: 70%;
+}
+
+button {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #74b9ff;
+}
+
+#upgradePlanBtn {
+    background-color: #ff7675;
+}
+
+#upgradePlanBtn:hover {
+    background-color: #e74c3c;
+}
+
+.info-list {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-item {
+    background-color: #34495e;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.viewBtn {
+    background-color: #2ecc71;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.viewBtn:hover {
+    background-color: #27ae60;
+}
+
+.movie-details {
+    margin-top: 30px;
+    width: 90%;
+    text-align: left;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details h2 {
+    color: #fff;
+}
+
+.movie-details p {
+    color: #dfe6e9;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.movie-details img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.bottom-nav button {
+    background-color: #55efc4;
+}
+
+.bottom-nav button:hover {
+    background-color: #1abc9c;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .microphone-btn {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    .info-item {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .movie-details {
+        width: 100%;
+    }
+}
